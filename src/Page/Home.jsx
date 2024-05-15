@@ -26,6 +26,8 @@ const Home = () => {
     getNews("bhopal");
   }, []);
 
+
+
   // console.log(newsAll)
 
   const ThemeChange = () => {
