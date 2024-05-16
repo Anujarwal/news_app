@@ -60,16 +60,20 @@ const Home = () => {
       <div
         className={
           darkMode
-            ? "navbar navbar-expand-lg bg-dark text-ligh container-fluid p-5"
-            : "navbar navbar-expand-lg bg-body-tertiary container-fluid p-5 "
+          ? "navbar navbar-expand-lg bg-dark text-ligh container-fluid p-5"
+          : "navbar navbar-expand-lg bg-body-tertiary container-fluid p-5 "
         }
       >
-        <h3 className="text-center MY-3">Top News</h3>
 
         <section>
-          <div className="row g-3">
+          <div className="row g-2">
             <WeatherCard />
             <div className="col-md-8 col-sm-12">
+        <h3 className= {
+          darkMode
+          ? "text-center bg-dark text-light   "
+          : "text-center  "
+        } >Top News</h3>
               {newsAll?.map((news, index) => (
                 <NewsCard key={index} news={news} />
               ))}
